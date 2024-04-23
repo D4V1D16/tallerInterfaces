@@ -9,10 +9,10 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Celulares</ion-title>
     </ion-toolbar>
   </ion-header>
-
+  <!--
   <form [formGroup]="formData">
     <ion-list>
       <ion-item>
@@ -34,9 +34,11 @@
 
     <ion-button (click)="agregarTelefono()">Agregar Celular</ion-button>
   </form>
+-->
 
   <ion-card *ngFor="let cel of arrCells">
     <ion-card-header>
+      <img alt="celular" src="{{cel.imagen}}" style="max-width: 100px; max-height: 200px;" />
       <ion-card-title>{{ cel.marca }}</ion-card-title>
       <ion-card-subtitle>{{ cel.modelo }}</ion-card-subtitle>
     </ion-card-header>
